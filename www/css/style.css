@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+:root {
+    --primary-color: #000000af;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.2;
+}
+
+ul {
+    min-width: 50%;
+    list-style-type: none;
+    justify-content: left;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1 {
+    color: rgb(241, 188, 13);
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+code,
+pre {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+.section-header {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.degree-span {
+    font-weight: 900;
+}
+
+
+/* Navbar */
+
+#navs .container flex {
+    background-color: #95a3b4;
+    height: 80px;
+}
+
+.navbar .logo {
+    color: rgb(241, 188, 13);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    color: rgb(241, 188, 13);
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+#menu-bar {
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 2rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+    color: var(--primary-color);
+}
+
+
+/* Showcase*/
+
+.showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    border-top: 5px rgb(241, 188, 13) solid;
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus {
+    outline: none;
+}
+
+.showcase::before,
+.showcase::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+
+/* education */
+
+.education,
+.Work-experience {
+    padding-top: 100px;
+}
+
+.work-experience #info p {
+    text-align: right;
+    padding: 2rem 0;
+}
+
+.education-heading,
+.Work-experience-heading {
+    max-width: 500px;
+    margin: auto;
+}
+
+.education .grid h3 {
+    font-size: 35px;
+}
+
+.education .grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* contact */
+
+.heading {
+    text-align: center;
+    padding: 2.5rem 0;
+    text-transform: uppercase;
+}
+
+.heading span {
+    font-size: 2.5rem;
+    background: var(--primary-color);
+    color: rgb(241, 188, 13);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    /* display: inline-block; */
+}
+
+.heading span.space {
+    background: none;
+}
+
+.contact .links ul {
+    /* margin-left: 3rem; */
+    text-align: justify;
+    padding: 2.5rem 0;
+    font-size: 1.5rem;
+    display: block;
+}
+
+.contact .links ul li:hover {
+    color: rgba(44, 16, 204, 0.774);
+}
+
+
+/* work- experience */
+
+.Work-experience .container #info ul {
+    text-align: justify;
+}
+
+
+/* Gallery */
+
+.gallery ul {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    cursor: pointer;
+    list-style: none;
+}
+
+.gallery ul.active {
+    background: url('images/close.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+.column-text {
+    font-weight: 900;
+}
+
+form {
+    margin: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* #contact .links {
+    margin-left: 5rem;
+} */
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--primary-color);
+}
+
+.footer .container h1 {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    overflow-y: none !important;
+    overflow-x: none !important;
+}
+
+footer .credit span {
+    color: rgb(241, 188, 13);
+    text-transform: capitalize;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    transition: linear;
+}
+
+.gallery .box-container {
+    /* display: flex; */
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 10px;
+}
+
+.gallery .box-container .box {
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border: 1rem solid #fff;
+    border-radius: .5rem;
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+    min-height: 100px;
+}
+
+.gallery .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .box .content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.gallery .box-container .box:hover .content {
+    top: 0;
+}
+
+.gallery .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: var(--orange);
+}
+
+.gallery .box-container .box .content p {
+    font-size: 1.5rem;
+    color: #eee;
+    padding: .5rem 0;
+}
+
+.w-size {
+    width: 50%;
+    height: 50%;
+}
+
+.hamburger-icon {
+    color: rgb(241, 188, 13) !important;
+}

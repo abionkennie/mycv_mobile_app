@@ -1,0 +1,153 @@
+@media only screen and (max-width: 576px) {
+    body {
+        padding: 0;
+    }
+    .grid,
+    .showcase .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .showcase {
+        height: auto;
+    }
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .showcase-form {
+        position: relative;
+        top: 500px;
+        height: 350px;
+        width: 300px;
+        padding: 40px;
+        z-index: 100;
+    }
+    section.education {
+        margin-top: 400px;
+    }
+    .heading span {
+        font-size: .5rem;
+        background: var(--primary-color);
+        color: rgb(241, 188, 13);
+        border-radius: .5rem;
+        padding: .1rem 0.3rem;
+    }
+}
+
+@media (max-width:1200px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (max-width:991px) {
+    body {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+    h1 {
+        font-size: 70%;
+    }
+    #contact .links ul {
+        padding: 1rem;
+        left: 0;
+        margin: 1rem;
+    }
+}
+
+@media (max-width:576px) {
+    .logo {
+        font-size: 32px;
+    }
+    #myLinks {
+        display: none;
+    }
+    #hamburger-div {
+        display: block;
+    }
+    menu-bar {
+        display: initial;
+    }
+    header .navbar {
+        /* position: absolute; */
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #333;
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 2rem;
+        /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
+    }
+    header #navigation {
+        display: none;
+    }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+        color: #fff;
+    }
+    html {
+        font-size: 90%;
+    }
+    .info ul {
+        font-weight: bold;
+    }
+    #contact .links ul {
+        padding: 1rem;
+        font-size: 1.5rem;
+        left: 0;
+        margin: 1rem;
+    }
+    .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .navbar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+    }
+    .showcase {
+        width: 100%;
+    }
+    .heading span {
+        font-size: 2rem;
+    }
+    #contact .links ul {
+        left: 0;
+        margin: 1rem;
+    }
+    .info ul {
+        font-weight: bold;
+    }
+    .contact .row form .inputBox input {
+        width: 100%;
+    }
+    #professional-title {
+        font-size: 20px;
+    }
+    #professional-text {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) {
+    #myLinks {
+        display: block
+    }
+    #hamburger-div {
+        display: none;
+    }
+    #navigationVertical {
+        display: none;
+    }
+}
